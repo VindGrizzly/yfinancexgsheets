@@ -2,79 +2,138 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Yahoo Finance™ for Google Sheets™</title>
+    <title>Yahoo Finance™ for Google Sheets™</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: "#1A9B5B",
-            accent: "#5D1E93",
-            dark: "#1F1F1F",
-            navy: "#1F3356"
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          }
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#1A9B5B",
+                        accent: "#5D1E93",
+                        dark: "#1F1F1F",
+                        navy: "#1F3356"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 
 </head>
 
 <body class="bg-white text-dark font-sans">
 
-  <!-- NAVBAR -->
-  <nav class="w-full border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- NAVBAR -->
+    <nav class="w-full border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-      <div class="text-xl font-semibold">
-        Yahoo Finance™ for Google Sheets™
-      </div>
+            <div class="text-xl font-semibold">
+                Yahoo Finance™ for Google Sheets™
+            </div>
 
-      <div class="space-x-6 text-sm font-medium">
-        <a href="privacy.html" class="hover:text-brand transition">Privacy</a>
-        <a href="terms.html" class="hover:text-brand transition">Terms</a>
-      </div>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="privacy.html" class="hover:text-brand transition">Privacy</a>
+                <a href="terms.html" class="hover:text-brand transition">Terms</a>
+            </div>
 
-    </div>
-  </nav>
+        </div>
+    </nav>
 
-  <!-- HERO SECTION -->
-  <section class="py-24">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- HERO SECTION -->
+    <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6 text-center">
 
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-        Bring Yahoo Finance™ Data
-        <span class="text-brand">Directly Into Google Sheets™</span>
-      </h1>
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                Bring Yahoo Finance™ Data
+                <span class="text-brand">Directly Into Google Sheets™</span>
+            </h1>
 
-      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-        A powerful extension that allows you to fetch financial data
-        from Yahoo Finance™ directly inside your spreadsheets.
-      </p>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                A powerful extension that allows you to fetch financial data
+                from Yahoo Finance™ directly inside your spreadsheets.
+            </p>
 
-      <div class="mt-10">
-        <a href="#"
-           class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition">
-          Install Extension
-        </a>
-      </div>
+            <div class="mt-10">
+                <a href="#" class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition">
+                    Install Extension
+                </a>
+            </div>
 
-    </div>
-  </section>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Why Use Yahoo Finance™ for Google Sheets™
+                </h2>
+
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                    Simplify financial data retrieval and automate your workflow directly inside your spreadsheets.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                    <div class="text-brand text-3xl mb-4">📊</div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Real-Time Market Data
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Retrieve updated financial data from Yahoo Finance™ directly into Google Sheets™.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                    <div class="text-accent text-3xl mb-4">⚡</div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Fast & Automated
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Automate data retrieval using simple functions without manual updates.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                    <div class="text-navy text-3xl mb-4">🔧</div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Easy Integration
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Install and start using the extension within seconds with no complex setup.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
 </body>
 
