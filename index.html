@@ -2,20 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yahoo Finance for Google Sheets</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Yahoo Finance™ for Google Sheets™</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#1A9B5B",
+            accent: "#5D1E93",
+            dark: "#1F1F1F",
+            navy: "#1F3356"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
 
-<body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-    </nav>
+<body class="bg-white text-dark font-sans">
 
-    <h1>Welcome to YFinance x Google Sheets</h1>
-    <p>Coming soon...</p>
+  <!-- NAVBAR -->
+  <nav class="w-full border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <div class="text-xl font-semibold">
+        YFinance X GSheets
+      </div>
+
+      <div class="space-x-6 text-sm font-medium">
+        <a href="privacy.html" class="hover:text-brand transition">Privacy</a>
+        <a href="terms.html" class="hover:text-brand transition">Terms</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Bring Yahoo Finance Data
+        <span class="text-brand">Directly Into Google Sheets</span>
+      </h1>
+
+      <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        A powerful extension that allows you to fetch financial data
+        from Yahoo Finance directly inside your spreadsheets.
+      </p>
+
+      <div class="mt-10">
+        <a href="#"
+           class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition">
+          Install Extension
+        </a>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 
 </html>
