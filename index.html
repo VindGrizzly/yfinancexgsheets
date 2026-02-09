@@ -21,6 +21,7 @@
                     colors: {
                         brand: "#1A9B5B",
                         accent: "#5D1E93",
+                        yahoo: "#7D2EFF",
                         dark: "#1F1F1F",
                         navy: "#1F3356"
                     },
@@ -37,31 +38,8 @@
 
 </head>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-gray-300 py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center text-sm">
 
-        <p>
-            Google Sheets™ and Google Workspace™ are trademarks of Google LLC.
-        </p>
-
-        <p class="mt-2">
-            Yahoo Finance™ is a trademark of Yahoo Inc.
-        </p>
-
-        <p class="mt-2">
-            This project is not affiliated with or endorsed by Google or Yahoo.
-        </p>
-
-        <div class="mt-6">
-            <a href="privacy.html" class="hover:text-white mr-4">Privacy Policy</a>
-            <a href="terms.html" class="hover:text-white">Terms of Service</a>
-        </div>
-
-    </div>
-</footer>
-
-<body class="bg-white text-dark font-sans">
+<body class="bg-white text-dark font-sans min-h-screen flex flex-col">
 
     <!-- NAVBAR -->
     <nav class="w-full border-b border-gray-200">
@@ -72,196 +50,225 @@
             </div>
 
             <div class="space-x-6 text-sm font-medium">
-                <a href="privacy.html" class="hover:text-brand transition">Privacy</a>
-                <a href="terms.html" class="hover:text-brand transition">Terms</a>
+                <a href="privacy.html" class="hover:text-yahoo transition">Privacy</a>
+                <a href="terms.html" class="hover:text-yahoo transition">Terms</a>
             </div>
 
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="py-24">
-        <div class="max-w-6xl mx-auto px-6 text-center">
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="py-24">
+            <div class="max-w-6xl mx-auto px-6 text-center">
 
-            <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                Bring Yahoo Finance™ Data
-                <span class="text-brand">Directly Into Google Sheets™</span>
-            </h1>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+                    Bring Yahoo Finance™ Data
+                    <span class="text-brand">Directly Into Google Sheets™</span>
+                </h1>
 
-            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                A powerful extension that allows you to fetch financial data
-                from Yahoo Finance™ directly inside your spreadsheets.
-            </p>
+                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                    A powerful extension that allows you to fetch financial data
+                    from Yahoo Finance™ directly inside your spreadsheets.
+                </p>
 
-            <div class="mt-10">
-                <a href="#" class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition">
-                    Install Extension
-                </a>
+                <div class="mt-10">
+                    <a href="#"
+                        class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-yahoo transition-all duration-300 shadow-lg hover:shadow-xl">
+                        Install Extension
+                    </a>
+                </div>
+
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- FEATURES SECTION -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
 
-    <!-- FEATURES SECTION -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        Why Use Yahoo Finance™ for Google Sheets™
+                    </h2>
 
-            <div class="text-center mb-16">
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                        Simplify financial data retrieval and automate your workflow directly inside your spreadsheets.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                        <div class="text-brand text-3xl mb-4">📊</div>
+
+                        <h3 class="text-xl font-semibold mb-2">
+                            Real-Time Market Data
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Retrieve updated financial data from Yahoo Finance™ directly into Google Sheets™.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                        <div class="text-accent text-3xl mb-4">⚡</div>
+
+                        <h3 class="text-xl font-semibold mb-2">
+                            Fast & Automated
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Automate data retrieval using simple functions without manual updates.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
+                        <div class="text-navy text-3xl mb-4">🔧</div>
+
+                        <h3 class="text-xl font-semibold mb-2">
+                            Easy Integration
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Install and start using the extension within seconds with no complex setup.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INTRO SECTION -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+
                 <h2 class="text-3xl md:text-4xl font-bold">
-                    Why Use Yahoo Finance™ for Google Sheets™
+                    About Yahoo Finance™ for Google Sheets™
                 </h2>
 
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-                    Simplify financial data retrieval and automate your workflow directly inside your spreadsheets.
+                <p class="mt-8 text-gray-600 leading-relaxed">
+                    Yahoo Finance™ for Google Sheets™ is a Google Workspace add-on that allows users to fetch
+                    public financial market data from Yahoo Finance™ directly inside Google Sheets™.
                 </p>
-            </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    The add-on provides simple custom functions such as YF_PRICE, YF_CURRENCY,
+                    YF_EXCHANGE, and YF_NAME to retrieve market prices and instrument metadata
+                    for stocks, ETFs, indices, and forex pairs.
+                </p>
 
-                <!-- Card 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-                    <div class="text-brand text-3xl mb-4">📊</div>
-
-                    <h3 class="text-xl font-semibold mb-2">
-                        Real-Time Market Data
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Retrieve updated financial data from Yahoo Finance™ directly into Google Sheets™.
-                    </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-                    <div class="text-accent text-3xl mb-4">⚡</div>
-
-                    <h3 class="text-xl font-semibold mb-2">
-                        Fast & Automated
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Automate data retrieval using simple functions without manual updates.
-                    </p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition">
-                    <div class="text-navy text-3xl mb-4">🔧</div>
-
-                    <h3 class="text-xl font-semibold mb-2">
-                        Easy Integration
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Install and start using the extension within seconds with no complex setup.
-                    </p>
-                </div>
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    This add-on is designed to be lightweight, read-only, and focused on providing
+                    up-to-date financial data without collecting or storing personal user information.
+                </p>
 
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- HOW IT WORKS -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
 
-    <!-- INTRO SECTION -->
-    <section class="py-20">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold">
+                        How It Works
+                    </h2>
 
-            <h2 class="text-3xl md:text-4xl font-bold">
-                About Yahoo Finance™ for Google Sheets™
-            </h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                        After installing the add-on, you can use custom spreadsheet functions
+                        to retrieve public market data directly inside Google Sheets™.
+                    </p>
+                </div>
 
-            <p class="mt-8 text-gray-600 leading-relaxed">
-                Yahoo Finance™ for Google Sheets™ is a Google Workspace add-on that allows users to fetch
-                public financial market data from Yahoo Finance™ directly inside Google Sheets™.
-            </p>
+                <!-- Function Cards -->
+                <div class="grid md:grid-cols-2 gap-8">
 
-            <p class="mt-6 text-gray-600 leading-relaxed">
-                The add-on provides simple custom functions such as YF_PRICE, YF_CURRENCY,
-                YF_EXCHANGE, and YF_NAME to retrieve market prices and instrument metadata
-                for stocks, ETFs, indices, and forex pairs.
-            </p>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <code class="text-yahoo font-semibold">=YF_PRICE("AAPL")</code>
+                        <p class="mt-3 text-gray-600">
+                            Returns the current market price of the selected instrument.
+                        </p>
+                    </div>
 
-            <p class="mt-6 text-gray-600 leading-relaxed">
-                This add-on is designed to be lightweight, read-only, and focused on providing
-                up-to-date financial data without collecting or storing personal user information.
-            </p>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <code class="text-yahoo font-semibold">=YF_CURRENCY("AAPL")</code>
+                        <p class="mt-3 text-gray-600">
+                            Returns the trading currency (for example USD or EUR).
+                        </p>
+                    </div>
 
-        </div>
-    </section>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <code class="text-yahoo font-semibold">=YF_EXCHANGE("AAPL")</code>
+                        <p class="mt-3 text-gray-600">
+                            Returns the full name of the exchange where the instrument is traded.
+                        </p>
+                    </div>
 
-    <!-- HOW IT WORKS -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm">
+                        <code class="text-yahoo font-semibold">=YF_NAME("AAPL")</code>
+                        <p class="mt-3 text-gray-600">
+                            Returns the full or short name of the instrument.
+                        </p>
+                    </div>
 
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold">
-                    How It Works
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TECH INFO -->
+        <section class="py-20">
+            <div class="max-w-4xl mx-auto px-6">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-center">
+                    Technical & Privacy Information
                 </h2>
 
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-                    After installing the add-on, you can use custom spreadsheet functions
-                    to retrieve public market data directly inside Google Sheets™.
+                <p class="mt-8 text-gray-600 leading-relaxed">
+                    The add-on automatically manages caching to keep prices reasonably up to date
+                    while reducing external requests. Price data is cached for a short time, while
+                    instrument metadata such as name, exchange, and currency is cached for longer periods.
                 </p>
+
+                <p class="mt-6 text-gray-600 leading-relaxed">
+                    The add-on only accesses the currently active spreadsheet where the functions
+                    are used and performs read-only requests to Yahoo Finance™ to retrieve public
+                    market data. No personal user data is collected or stored.
+                </p>
+
             </div>
+        </section>
+    </main>
 
-            <!-- Function Cards -->
-            <div class="grid md:grid-cols-2 gap-8">
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <code class="text-brand font-semibold">=YF_PRICE("AAPL")</code>
-                    <p class="mt-3 text-gray-600">
-                        Returns the current market price of the selected instrument.
-                    </p>
-                </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="h-[2px] w-full bg-gradient-to-r from-brand to-yahoo mb-8"></div>
+        <div class="max-w-6xl mx-auto px-6 text-left text-sm">
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <code class="text-brand font-semibold">=YF_CURRENCY("AAPL")</code>
-                    <p class="mt-3 text-gray-600">
-                        Returns the trading currency (for example USD or EUR).
-                    </p>
-                </div>
+            <p>
+                Google Sheets™ and Google Workspace™ are trademarks of Google LLC.
+            </p>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <code class="text-brand font-semibold">=YF_EXCHANGE("AAPL")</code>
-                    <p class="mt-3 text-gray-600">
-                        Returns the full name of the exchange where the instrument is traded.
-                    </p>
-                </div>
+            <p class="mt-2">
+                Yahoo Finance™ is a trademark of Yahoo Inc.
+            </p>
 
-                <div class="bg-white p-8 rounded-2xl shadow-sm">
-                    <code class="text-brand font-semibold">=YF_NAME("AAPL")</code>
-                    <p class="mt-3 text-gray-600">
-                        Returns the full or short name of the instrument.
-                    </p>
-                </div>
+            <p class="mt-2">
+                This project is not affiliated with or endorsed by Google or Yahoo.
+            </p>
 
+            <div class="mt-6">
+                <a href="privacy.html" class="hover:text-white mr-4">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-white">Terms of Service</a>
             </div>
 
         </div>
-    </section>
-
-    <!-- TECH INFO -->
-    <section class="py-20">
-        <div class="max-w-4xl mx-auto px-6">
-
-            <h2 class="text-3xl md:text-4xl font-bold text-center">
-                Technical & Privacy Information
-            </h2>
-
-            <p class="mt-8 text-gray-600 leading-relaxed">
-                The add-on automatically manages caching to keep prices reasonably up to date
-                while reducing external requests. Price data is cached for a short time, while
-                instrument metadata such as name, exchange, and currency is cached for longer periods.
-            </p>
-
-            <p class="mt-6 text-gray-600 leading-relaxed">
-                The add-on only accesses the currently active spreadsheet where the functions
-                are used and performs read-only requests to Yahoo Finance™ to retrieve public
-                market data. No personal user data is collected or stored.
-            </p>
-
-        </div>
-    </section>
+    </footer>
 
 </body>
 
