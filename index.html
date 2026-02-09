@@ -45,16 +45,21 @@
 <body class="bg-white text-dark font-sans min-h-screen flex flex-col scroll-smooth">
 
     <!-- NAVBAR -->
-    <nav class="w-full border-b border-gray-200">
+    <nav class="w-full border-b border-gray-200 sticky top-0 bg-white z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-            <!-- Logo / Title -->
-            <div class="flex items-center gap-3">
+            <!-- Desktop Logo -->
+            <a href="/" class="hidden md:flex items-center gap-3">
                 <img src="/logo.png" class="h-8 w-8" alt="Logo">
                 <span class="text-xl font-semibold">
                     Yahoo Finance™ for Google Sheets™
                 </span>
-            </div>
+            </a>
+
+            <!-- Mobile CTA -->
+            <a href="#" class="md:hidden bg-brand text-white px-4 py-2 rounded-lg font-semibold text-sm">
+                Install
+            </a>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex space-x-6 text-sm font-medium">
@@ -62,7 +67,7 @@
                 <a href="terms.html" class="hover:text-yahoo transition">Terms</a>
             </div>
 
-            <!-- Burger Button -->
+            <!-- Burger -->
             <button id="menu-btn" class="md:hidden text-2xl">
                 ☰
             </button>
