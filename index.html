@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -36,6 +37,8 @@
     <meta name="description"
         content="Yahoo Finance™ for Google Sheets™ allows you to fetch financial market data directly inside Google Sheets™ using simple custom functions.">
 
+    <link rel="icon" type="image/png" href="/logo.png">
+
 </head>
 
 
@@ -45,17 +48,34 @@
     <nav class="w-full border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
-            <div class="text-xl font-semibold">
-                Yahoo Finance™ for Google Sheets™
+            <!-- Logo / Title -->
+            <div class="flex items-center gap-3">
+                <img src="/logo.png" class="h-8 w-8" alt="Logo">
+                <span class="text-xl font-semibold">
+                    Yahoo Finance™ for Google Sheets™
+                </span>
             </div>
 
-            <div class="space-x-6 text-sm font-medium">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
                 <a href="privacy.html" class="hover:text-yahoo transition">Privacy</a>
                 <a href="terms.html" class="hover:text-yahoo transition">Terms</a>
             </div>
 
+            <!-- Burger Button -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="privacy.html" class="block py-2 hover:text-yahoo transition">Privacy</a>
+            <a href="terms.html" class="block py-2 hover:text-yahoo transition">Terms</a>
         </div>
     </nav>
+
 
     <main class="flex-grow">
         <!-- HERO SECTION -->
@@ -179,46 +199,58 @@
                     </h2>
 
                     <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
-                        After installing the add-on, you can use custom spreadsheet functions
-                        to retrieve public market data directly inside Google Sheets™.
+                        Retrieve financial market data from Yahoo Finance™ using simple spreadsheet functions.
                     </p>
                 </div>
 
-                <!-- Function Cards -->
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-12">
 
-                    <div class="bg-white p-8 rounded-2xl shadow-sm">
-                        <code class="text-yahoo font-semibold">=YF_PRICE("AAPL")</code>
-                        <p class="mt-3 text-gray-600">
-                            Returns the current market price of the selected instrument.
-                        </p>
+                    <!-- Step 1 -->
+                    <div class="flex gap-6">
+                        <div class="text-yahoo text-3xl font-bold">01</div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold">Install the Add-on</h3>
+                            <p class="text-gray-600 mt-2">
+                                Install Yahoo Finance™ for Google Sheets™ from the Google Workspace Marketplace.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-sm">
-                        <code class="text-yahoo font-semibold">=YF_CURRENCY("AAPL")</code>
-                        <p class="mt-3 text-gray-600">
-                            Returns the trading currency (for example USD or EUR).
-                        </p>
+                    <!-- Step 2 -->
+                    <div class="flex gap-6">
+                        <div class="text-yahoo text-3xl font-bold">02</div>
+
+                        <div>
+                            <h3 class="text-xl font-semibold">Insert a Ticker Symbol</h3>
+                            <p class="text-gray-600 mt-2">
+                                Use any valid Yahoo Finance ticker such as AAPL, VWCE.DE, or EURUSD=X.
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-sm">
-                        <code class="text-yahoo font-semibold">=YF_EXCHANGE("AAPL")</code>
-                        <p class="mt-3 text-gray-600">
-                            Returns the full name of the exchange where the instrument is traded.
-                        </p>
-                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex gap-6">
+                        <div class="text-yahoo text-3xl font-bold">03</div>
 
-                    <div class="bg-white p-8 rounded-2xl shadow-sm">
-                        <code class="text-yahoo font-semibold">=YF_NAME("AAPL")</code>
-                        <p class="mt-3 text-gray-600">
-                            Returns the full or short name of the instrument.
-                        </p>
+                        <div>
+                            <h3 class="text-xl font-semibold">Use Custom Functions</h3>
+
+                            <div class="mt-4 space-y-2 text-sm">
+                                <code class="block bg-white p-3 rounded-lg shadow-sm">=YF_PRICE("AAPL")</code>
+                                <code class="block bg-white p-3 rounded-lg shadow-sm">=YF_CURRENCY("AAPL")</code>
+                                <code class="block bg-white p-3 rounded-lg shadow-sm">=YF_EXCHANGE("AAPL")</code>
+                                <code class="block bg-white p-3 rounded-lg shadow-sm">=YF_NAME("AAPL")</code>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
 
             </div>
         </section>
+
 
         <!-- TECH INFO -->
         <section class="py-20">
@@ -246,29 +278,46 @@
 
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-gray-300 py-12">
-        <div class="h-[2px] w-full bg-gradient-to-r from-brand to-yahoo mb-8"></div>
-        <div class="max-w-6xl mx-auto px-6 text-left text-sm">
+    <footer class="bg-gray-100 border-t border-gray-200 py-12 mt-20">
+        <div class="max-w-6xl mx-auto px-6">
 
-            <p>
-                Google Sheets™ and Google Workspace™ are trademarks of Google LLC.
-            </p>
+            <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-600">
 
-            <p class="mt-2">
-                Yahoo Finance™ is a trademark of Yahoo Inc.
-            </p>
+                <div>
+                    <p class="font-semibold text-dark mb-2">
+                        Yahoo Finance™ for Google Sheets™
+                    </p>
 
-            <p class="mt-2">
-                This project is not affiliated with or endorsed by Google or Yahoo.
-            </p>
+                    <p>
+                        Lightweight Google Workspace add-on that retrieves public financial market data directly from
+                        Yahoo Finance™.
+                    </p>
+                </div>
 
-            <div class="mt-6">
-                <a href="privacy.html" class="hover:text-white mr-4">Privacy Policy</a>
-                <a href="terms.html" class="hover:text-white">Terms of Service</a>
+                <div class="md:text-right space-y-2">
+                    <a href="privacy.html" class="block hover:text-yahoo transition">Privacy Policy</a>
+                    <a href="terms.html" class="block hover:text-yahoo transition">Terms of Service</a>
+                </div>
+
+            </div>
+
+            <div class="mt-10 text-xs text-gray-500">
+                <p>Google Sheets™ and Google Workspace™ are trademarks of Google LLC.</p>
+                <p>Yahoo Finance™ is a trademark of Yahoo Inc.</p>
+                <p>This project is not affiliated with or endorsed by Google or Yahoo.</p>
             </div>
 
         </div>
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
 
 </body>
 
