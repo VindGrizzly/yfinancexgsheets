@@ -79,24 +79,58 @@
 
     <main class="flex-grow">
         <!-- HERO SECTION -->
-        <section class="py-24">
-            <div class="max-w-6xl mx-auto px-6 text-center">
+        <section class="py-24 bg-gradient-to-b from-white to-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
 
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-                    Bring Yahoo Finance™ Data
-                    <span class="text-brand">Directly Into Google Sheets™</span>
-                </h1>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
 
-                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-                    A powerful extension that allows you to fetch financial data
-                    from Yahoo Finance™ directly inside your spreadsheets.
-                </p>
+                    <!-- LEFT TEXT -->
+                    <div>
 
-                <div class="mt-10">
-                    <a href="#"
-                        class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-yahoo transition-all duration-300 shadow-lg hover:shadow-xl">
-                        Install Extension
-                    </a>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                            Financial Data from
+                            <span class="text-yahoo">Yahoo Finance™</span>
+                            Directly in
+                            <span class="text-brand">Google Sheets™</span>
+                        </h1>
+
+                        <p class="mt-6 text-lg text-gray-600">
+                            Fetch real-time market data using simple spreadsheet functions.
+                            Lightweight, read-only and designed for speed.
+                        </p>
+
+                        <div class="mt-10 flex flex-wrap gap-4">
+
+                            <a href="#"
+                                class="bg-brand text-white px-8 py-4 rounded-xl font-semibold hover:bg-yahoo transition-all duration-300 shadow-lg hover:shadow-xl">
+                                Install Extension
+                            </a>
+
+                            <a href="#how-it-works"
+                                class="px-8 py-4 rounded-xl border border-gray-300 font-semibold hover:border-yahoo hover:text-yahoo transition">
+                                See How It Works
+                            </a>
+
+                        </div>
+
+                        <!-- Trust line -->
+                        <p class="mt-6 text-sm text-gray-500">
+                            Works with stocks, ETFs, indices and forex pairs.
+                        </p>
+
+                    </div>
+
+                    <!-- RIGHT VISUAL -->
+                    <div class="relative">
+
+                        <div class="bg-white p-4 rounded-2xl shadow-xl border border-gray-100">
+
+                            <img src="/screenshot.png" alt="Google Sheets Screenshot" class="rounded-lg">
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -299,14 +333,7 @@
         </div>
     </footer>
 
-    <script>
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-    </script>
+    <script src="/js/main.js"></script>
 
 </body>
 
