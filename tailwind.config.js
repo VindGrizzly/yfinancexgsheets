@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./*.html",
+    "./partials/*.html",
     "./js/*.js"
   ],
   theme: {
