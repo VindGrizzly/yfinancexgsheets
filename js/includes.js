@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     try {
         await inject("#site-navbar", "/partials/navbar.html");
         await inject("#site-footer", "/partials/footer.html");
+        await inject("#site-cookie-banner", "/partials/cookie-banner.html");
 
         // dopo che l'HTML è stato iniettato
         setActiveNav();
