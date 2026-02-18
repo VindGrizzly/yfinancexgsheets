@@ -56,24 +56,83 @@
             <div class="space-y-6 text-gray-600 leading-relaxed">
 
                 <p>
-                    This add-on does not collect, store, or share any personal user data.
+                    This add-on is designed to minimize data access and does not collect, sell, or share personal user
+                    data.
                 </p>
 
                 <p>
-                    The add-on only accesses the currently active Google Sheets™ spreadsheet in which the user invokes
-                    the provided custom functions. No other spreadsheets are accessed.
+                    <span class="font-semibold text-dark">Google Sheets access.</span>
+                    The add-on only operates within the currently active Google Sheets™ spreadsheet where the user
+                    invokes the provided
+                    custom functions. The developer does not access other spreadsheets outside the user's explicit
+                    actions.
                 </p>
 
                 <p>
-                    Public financial data is retrieved from Yahoo Finance™ via secure HTTPS requests.
+                    <span class="font-semibold text-dark">External data source (Yahoo Finance™).</span>
+                    When a user calls a function (for example with a ticker symbol), the add-on retrieves public market
+                    data from Yahoo Finance™.
+                    Requests are performed via secure HTTPS/TLS connections. The information sent to Yahoo Finance™ is
+                    limited to what is necessary
+                    to fulfill the request (e.g., the ticker symbol and request parameters).
                 </p>
 
                 <p>
-                    No personal information is sent to or stored by the developer.
+                    <span class="font-semibold text-dark">No permanent storage of spreadsheet contents.</span>
+                    We do not store, retain, or persist users' spreadsheet contents, files, or personal information on
+                    external servers or databases.
+                    Data is processed only to provide the requested functionality.
                 </p>
 
                 <p>
-                    The developer does not use the data for advertising, analytics, or marketing purposes.
+                    <span class="font-semibold text-dark">Temporary caching (performance).</span>
+                    To reduce repeated requests and improve performance, the add-on may use Google Apps Script's caching
+                    mechanisms to temporarily cache
+                    Yahoo Finance™ responses. This cache is time-limited and expires automatically. It is used solely
+                    for performance and reliability,
+                    and is not used for profiling or advertising.
+                </p>
+
+                <p>
+                    <span class="font-semibold text-dark">Data protection & security measures.</span>
+                    All transmissions to external services are encrypted in transit using HTTPS/TLS. Access to Google
+                    services is handled through
+                    Googl's OAuth framework. We apply access controls to limit data handling to the minimum necessary
+                    for the user-requested features.
+                </p>
+
+                <p>
+                    <span class="font-semibold text-dark">Data sharing.</span>
+                    We do not sell user data and we do not share Google user data with third parties. The add-on only
+                    communicates with Yahoo Finance™
+                    to retrieve public financial information requested by the user.
+                </p>
+
+                <p>
+                    <span class="font-semibold text-dark">Data retention and deletion.</span>
+                    Because we do not permanently store personal or spreadsheet data, there is no long-term retention of
+                    such data by the developer.
+                    Any temporary cached data expires automatically according to the cache duration.
+                </p>
+
+                <p>
+                    <span class="font-semibold text-dark">No advertising or marketing use.</span>
+                    The developer does not use data for advertising, analytics, or marketing purposes.
+                </p>
+
+                <h2 class="text-xl font-semibold text-dark pt-6">
+                    Effective Date and Policy Updates
+                </h2>
+
+                <p>
+                    This Privacy Policy is effective as of 18/02/2026.
+                </p>
+
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in functionality,
+                    security practices, or legal requirements. Any updates will be published on this page
+                    with a revised effective date. Continued use of the add-on after changes become effective
+                    constitutes acceptance of the updated policy.
                 </p>
 
                 <h2 class="text-xl font-semibold text-dark pt-6">
